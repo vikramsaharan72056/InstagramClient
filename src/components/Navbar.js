@@ -45,11 +45,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-wrapper">
-        <Link
-          to={state ? "/" : "/signin"}
-          className="brand-logo left"
-          style={{ font: "gr" }}
-        >
+        <Link to={state ? "/" : "/signin"} style={{ font: "gr" }}>
           <span>Instagram</span>
         </Link>
         <ul id="nav-mobile" className="right ">
