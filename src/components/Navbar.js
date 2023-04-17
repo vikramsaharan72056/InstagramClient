@@ -47,10 +47,10 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <Link
           to={state ? "/" : "/signin"}
-          className="brand-logo"
+          className="brand-logo left"
           style={{ font: "gr" }}
         >
-          <span style={{ float: "left" }}>Instagram</span>
+          <span>Instagram</span>
         </Link>
         <ul id="nav-mobile" className="right ">
           {renderList()}

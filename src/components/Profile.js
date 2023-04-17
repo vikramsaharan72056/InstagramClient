@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Profile = () => {
+  const [mydata, setMydata] = useState([]);
+  useEffect(() => {
+    fetch("/mypost", {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("jwt"),
+      },
+    })
+      .then((res) => res.json())
+      .then((result) => setMydata(result.mypost));
+  }, []);
   return (
     <div>
       <div style={{ display: "flex" }}>
