@@ -67,9 +67,9 @@ const Login = () => {
           >
             Login
           </button>
-          <h5 style={{ marginLeft: "30%" }}>
+          <p style={{ marginLeft: "30%" }}>
             Don't have an account,then <Link to="/signup">Register</Link>
-          </h5>
+          </p>
         </div>
       </div>
     </>
