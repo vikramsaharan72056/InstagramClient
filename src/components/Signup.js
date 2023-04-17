@@ -10,7 +10,7 @@ const Signup = () => {
   const history = useNavigate();
 
   const PostData = async () => {
-    await fetch("http://localhost:8080/signup", {
+    await fetch("https://instagramserver-ypo7.onrender.com/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

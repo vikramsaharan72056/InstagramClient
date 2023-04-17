@@ -11,7 +11,7 @@ const CreatePost = () => {
 
   useEffect(() => {
     if (url) {
-      fetch("http://localhost:8080/createpost", {
+      fetch("https://instagramserver-ypo7.onrender.com/createpost", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

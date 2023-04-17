@@ -4,7 +4,7 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/allpost", {
+    fetch("https://instagramserver-ypo7.onrender.com/allpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },

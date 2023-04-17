@@ -10,7 +10,7 @@ const Login = () => {
   const history = useNavigate();
 
   const PostData = () => {
-    fetch("http://localhost:8080/signin", {
+    fetch("https://instagramserver-ypo7.onrender.com/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
